@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cyan - services</title>
+	<link rel="stylesheet" href="css/app.css">
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<!--Header-->
+		<header id="header" class="header  header--secondary">
+			<div class="container">
+				<div class="header__wrapper">
+					<!--Logo-->
+					<a href="index.html" class="header__logo">
+						<svg width="105" height="93" viewBox="0 0 105 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4.98509 54.8709C4.98509 49.3021 8.87129 45.0688 14.3564 45.0688C17.1781 45.0688 19.5585 46.016 21.1883 46.8918V44.5194C20.0938 43.8633 17.6142 42.7567 14.3564 42.7567C7.58615 42.7567 2.57129 48.0319 2.57129 54.8709C2.57129 61.7417 7.58615 66.985 14.3564 66.985C17.7407 66.985 20.2486 65.9103 21.3456 65.2627V62.8861C19.715 63.7325 17.3021 64.6772 14.3564 64.6772C8.87129 64.6694 4.98509 60.4388 4.98509 54.8709Z" fill="#00605F" />
+							<path d="M38.132 54.8381L31.3617 43.1468H28.6982L36.9409 57.2148V66.594H39.3222V57.2148L47.5657 43.1468H44.9014L38.132 54.8381Z" fill="#00605F" />
+							<path d="M60.7506 42.7567L50.502 66.594H53.0406L55.3911 60.9279H66.1416L68.5546 66.594H71.0616L60.813 42.7567H60.7506ZM56.3043 58.8759C57.934 55.0009 59.3449 51.6141 60.7865 47.9346C62.2281 51.6141 63.6381 55.0009 65.2678 58.8759H56.3043Z" fill="#00605F" />
+							<path d="M94.8308 43.1468V58.7131C94.8308 59.495 94.8625 60.146 94.8625 60.797L94.2041 59.9833L79.8179 42.7567H79.7871V66.594H82.1701V51.0277C82.1701 50.2786 82.1393 49.5948 82.1393 48.9438C82.3275 49.2022 82.578 49.4975 82.7977 49.7576L97.1831 66.985H97.2147V43.1468H94.8308Z" fill="#00605F" />
+							<path d="M53.8879 32.848C54.5534 32.8482 55.2173 32.7821 55.8699 32.6508L55.8973 32.6456C58.1753 32.1757 60.2226 30.9288 61.6938 29.1154C63.1651 27.3019 63.9701 25.0329 63.9732 22.6911V14.018C64.0125 12.6593 63.7807 11.3065 63.2915 10.0397C62.8024 8.7728 62.0658 7.61766 61.1254 6.64262C60.185 5.66758 59.0599 4.89247 57.8168 4.36317C56.5736 3.83388 55.2376 3.56116 53.8879 3.56116C52.5382 3.56116 51.2022 3.83388 49.9591 4.36317C48.7159 4.89247 47.5908 5.66758 46.6504 6.64262C45.71 7.61766 44.9734 8.7728 44.4843 10.0397C43.9951 11.3065 43.7633 12.6593 43.8026 14.018V22.6911C43.8058 25.3839 44.8694 27.9655 46.76 29.8696C48.6507 31.7736 51.2141 32.8448 53.8879 32.848ZM44.3772 23.5893C44.395 23.593 44.413 23.5953 44.4311 23.5962C47.0083 23.6774 49.4904 24.596 51.5066 26.2148C52.4115 26.939 53.222 27.7755 53.9187 28.7043C54.6754 29.7126 55.4082 30.851 55.6912 32.0953C55.693 32.1024 55.6953 32.1093 55.6981 32.116L55.6724 32.1393C54.3656 32.3898 53.0213 32.3626 51.7255 32.0596C50.4298 31.7565 49.2112 31.1841 48.1478 30.3792C47.0844 29.5743 46.1998 28.5545 45.5505 27.3853C44.9011 26.2161 44.5015 24.9231 44.3772 23.5893ZM56.7181 31.8766C57.6484 30.7933 58.2572 29.4268 58.2854 27.9792C58.3205 25.9599 57.226 24 56.0768 22.4225C54.7686 20.6262 53.1893 19.0547 51.8238 17.3058C50.3702 15.4406 48.9303 13.5289 49.0287 11.036C49.1244 8.61457 50.3848 6.44543 52.1658 4.88165C53.1064 10.6149 57.4398 15.8806 63.4345 16.362V22.6911C63.4323 24.7425 62.7799 26.7396 61.5725 28.3917C60.3651 30.0438 58.6657 31.2646 56.7215 31.8766H56.7181ZM63.4345 14.018V15.7962C57.5937 15.3218 53.4886 10.044 52.6712 4.47779C53.0745 4.42624 53.4805 4.40036 53.8871 4.40029C56.4191 4.40302 58.8467 5.41717 60.6373 7.22023C62.4278 9.02329 63.435 11.468 63.438 14.018H63.4345ZM44.3353 14.018C44.3382 11.8799 45.0473 9.8035 46.3509 8.11588C47.6545 6.42826 49.4785 5.22531 51.5357 4.69651C48.7995 7.26434 47.481 11.3408 49.398 14.812C50.4335 16.6875 51.9119 18.3511 53.3133 19.952C54.8524 21.7069 56.4881 23.523 57.2944 25.7584C58.0691 27.9043 57.6364 30.0295 56.1606 31.6553C55.828 30.4739 55.1346 29.3897 54.4069 28.4193C53.6481 27.3989 52.7582 26.4845 51.7606 25.6999C49.6621 24.0483 47.0956 23.1133 44.4336 23.0304C44.4047 23.0303 44.3758 23.0347 44.3481 23.0433C44.3481 22.9262 44.3413 22.81 44.3413 22.692L44.3353 14.018Z" fill="#00605F" stroke="#125E5E" stroke-width="0.5" />
+							<path d="M28.9672 83.2316L27.3896 77.4724H27.8531L29.2212 82.6443L30.6705 77.6498H31.1767L32.5567 82.6141L33.9197 77.4767H34.3728L32.7696 83.2359H32.3147L30.9142 78.2578L29.4478 83.2316H28.9672Z" fill="#00605F" />
+							<path d="M37.0312 83.2316V77.4724H40.4609V77.8608H37.4434V80.0368H39.8008V80.4278H37.4434V82.8389H40.684V83.2281L37.0312 83.2316Z" fill="#00605F" />
+							<path d="M43.4219 83.2316V77.4724H43.8332V82.8389H47.0738V83.2281L43.4219 83.2316Z" fill="#00605F" />
+							<path d="M49.7397 83.2316V77.4724H50.1519V82.8389H53.3925V83.2281L49.7397 83.2316Z" fill="#00605F" />
+							<path d="M56.0586 83.2316V77.4724H56.4861L60.156 82.6098V77.4724H60.5587V83.2316H60.1312L56.4622 78.1631V83.2316H56.0586Z" fill="#00605F" />
+							<path d="M63.7866 83.2316V77.4724H67.2162V77.8608H64.1979V80.0368H66.5561V80.4278H64.1996V82.8389H67.4402V83.2281L63.7866 83.2316Z" fill="#00605F" />
+							<path d="M69.9087 82.4721L70.2088 82.1784C70.4065 82.4115 70.645 82.6059 70.9125 82.7519C71.2162 82.9121 71.5557 82.991 71.8984 82.981C72.3379 82.981 72.7007 82.8788 72.9869 82.6744C73.273 82.47 73.4155 82.1664 73.4144 81.7634C73.4269 81.5161 73.3527 81.2723 73.2049 81.0745C73.0585 80.897 72.8716 80.7579 72.6602 80.6689C72.4355 80.5701 72.2033 80.4892 71.9659 80.4269C71.7479 80.3641 71.5333 80.296 71.3187 80.2237C71.1137 80.1566 70.9178 80.064 70.7355 79.9481C70.5612 79.8355 70.417 79.6814 70.3157 79.4995C70.2024 79.2828 70.1476 79.0399 70.1567 78.7951C70.1551 78.5365 70.2279 78.2829 70.3661 78.0649C70.5167 77.8347 70.7278 77.6511 70.9758 77.5344C71.2746 77.3946 71.6015 77.3265 71.9309 77.3355C72.2109 77.3279 72.4899 77.3717 72.7543 77.4647C72.9541 77.538 73.1409 77.6433 73.3075 77.7764C73.4367 77.8784 73.5518 77.9975 73.6495 78.1303L73.358 78.3809C73.2751 78.2737 73.1801 78.1766 73.0749 78.0916C72.937 77.9799 72.7823 77.8909 72.6166 77.8281C72.3929 77.7466 72.1559 77.7083 71.9181 77.7153C71.6524 77.7044 71.3881 77.7594 71.1485 77.8754C70.9667 77.9657 70.8151 78.1076 70.7124 78.2836C70.622 78.4443 70.5746 78.6259 70.5748 78.8106C70.5677 78.9288 70.5855 79.0472 70.6269 79.158C70.6683 79.2688 70.7324 79.3697 70.815 79.4539C70.9915 79.6162 71.2006 79.7384 71.4281 79.8121C71.6769 79.8982 71.9292 79.9766 72.1865 80.0446C72.3902 80.0977 72.5902 80.1644 72.7851 80.2444C72.9782 80.3227 73.16 80.427 73.3255 80.5544C73.4904 80.6836 73.6238 80.8491 73.7154 81.0383C73.8194 81.2652 73.8695 81.5135 73.8616 81.7634C73.8701 82.0715 73.7782 82.3739 73.5999 82.6245C73.4175 82.8694 73.1729 83.0603 72.892 83.1773C72.5775 83.31 72.2393 83.3759 71.8984 83.3711C71.471 83.3838 71.0474 83.2872 70.6671 83.0903C70.3735 82.941 70.1149 82.7302 69.9087 82.4721Z" fill="#00605F" />
+							<path d="M76.4336 82.4721L76.7337 82.1784C76.9311 82.4114 77.1694 82.6058 77.4366 82.7519C77.7403 82.912 78.0798 82.9909 78.4224 82.981C78.8631 82.981 79.2262 82.8788 79.5118 82.6744C79.7974 82.47 79.9399 82.1664 79.9393 81.7634C79.9515 81.516 79.8771 81.2722 79.729 81.0745C79.5828 80.8971 79.3963 80.7579 79.1851 80.6689C78.9612 80.5704 78.7299 80.4898 78.4934 80.4278C78.2762 80.3646 78.0608 80.2969 77.847 80.2246C77.6419 80.1576 77.446 80.065 77.2638 79.949C77.0895 79.8361 76.9451 79.6821 76.8432 79.5004C76.7303 79.2835 76.6755 79.0407 76.6841 78.796C76.6825 78.5372 76.7555 78.2835 76.8945 78.0657C77.0447 77.8356 77.2555 77.652 77.5033 77.5353C77.8024 77.3956 78.1296 77.3276 78.4592 77.3364C78.7392 77.3288 79.0182 77.3726 79.2826 77.4656C79.4823 77.5393 79.669 77.6445 79.8358 77.7773C79.9649 77.8795 80.0799 77.9985 80.1779 78.1312L79.8863 78.3818C79.8034 78.2746 79.7084 78.1775 79.6033 78.0924C79.465 77.9807 79.31 77.8918 79.1441 77.8289C78.9207 77.7474 78.6839 77.7092 78.4464 77.7161C78.1807 77.7053 77.9165 77.7603 77.6768 77.8763C77.496 77.9675 77.3456 78.11 77.2442 78.2862C77.1538 78.4469 77.1063 78.6285 77.1065 78.8132C77.0995 78.9314 77.1172 79.0498 77.1586 79.1606C77.2 79.2714 77.2641 79.3722 77.3468 79.4564C77.5232 79.6188 77.7323 79.741 77.9599 79.8147C78.2087 79.9008 78.4609 79.9791 78.7183 80.0472C78.922 80.1004 79.1219 80.1671 79.3168 80.2469C79.5099 80.3255 79.6916 80.4298 79.8572 80.5569C80.0218 80.6865 80.1551 80.852 80.2471 81.0409C80.3512 81.2678 80.4013 81.5161 80.3933 81.7659C80.4019 82.0742 80.3097 82.3768 80.1308 82.6271C79.9489 82.8721 79.7045 83.0631 79.4237 83.1799C79.109 83.3127 78.7705 83.3786 78.4293 83.3736C78.0022 83.3864 77.5788 83.2898 77.1989 83.0929C76.9025 82.9437 76.6415 82.7319 76.4336 82.4721Z" fill="#00605F" />
+						</svg>
+					</a>
+					<div class="header__panel" data-menu>
+						<div class="header__wrap">
+							<nav class="nav header__menu">
+								<ul class="nav__list list-reset">
+									<li class="nav__item">
+										<a href="services.html" class="nav__link active">
+											<span>Services</span>
+										</a>
+									</li>
+									<li class="nav__item">
+										<a href="atmosphere.html" class="nav__link ">
+											<span>Atmosphere</span>
+										</a>
+									</li>
+									<li class="nav__item">
+										<a href="blogs.html" class="nav__link ">
+											<span>Blog</span>
+										</a>
+									</li>
+									<li class="nav__item">
+										<a href="contacts.html" class="nav__link ">
+											<span>Contact us</span>
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+							<button type="button" class="b-btn b-btn--green">
+								Book Now
+							</button>
+							<div class="header__mobile">
+								<div class="s-block">
+									<a href="#" class="s-block__link" target="_blank" rel="noopener nofollow">
+										<img src="images/icon/inst.svg" alt="" width="39" height="39">
+									</a>
+									<a href="#" class="s-block__link" target="_blank" rel="noopener nofollow">
+										<img src="images/icon/facebook.svg" alt="" width="39" height="39">
+									</a>
+									<a href="#" class="s-block__link" target="_blank" rel="noopener nofollow">
+										<img src="images/icon/mail.svg" alt="" width="39" height="39">
+									</a>
+								</div>
+								<div class="header__links">
+									<a href="mailto:info@cyanuae.com">info@cyanuae.com</a>
+									<a href="tel:+971547790503">+971547790503</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="burger" aria-label="Open menu" aria-expanded="false" data-burger>
+						<span class="burger__line"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+
+			<section class="hero-section hero-section--services" id="hero">
+				<div class="container">
+					<div class="hero-section__grid">
+						<h1 class="hero-section__title">
+							Our Services
+						</h1>
+						<div class="hero-section__img">
+							<picture>
+								<source srcset="images/services/hero/services.webp 1x, images/services/hero/services@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/services/hero/services.png 1x, images/services/hero/services@2x.png 1.3x" type="image/png">
+								<img src="images/services/hero/services.png" alt="" width="548" height="282">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="offer section-left">
+				<div class="container">
+					<div class="offer__wrapper section-left__wrapper">
+						<div class="offer__img section-left__img">
+							<picture>
+								<source srcset="images/home/experience/experience.webp 1x, images/home/experience/experience@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/home/experience/experience.png 1x, images/home/experience/experience@2x.png 1.3x" type="image/png">
+								<img src="images/home/experience/experience.png" alt="" width="413" height="524">
+							</picture>
+						</div>
+						<div class="offer__wrap section-left__wrap">
+							<h2 class="section-title offer__title">
+								What we offer
+							</h2>
+							<div class="section-text offer__text">
+								<p>
+									At Cyan Wellness we provide you with a sanctuary for relaxation, rejuvenation, and personal
+									growth, in the comfort of your own home. All with a focus on sustainability and responsible
+									choices.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="service-list">
+				<div class="container">
+					<div class="service-list__head">
+						<h2 class="section-title service-list__title">
+							Our Service List
+						</h2>
+						<div class="section-text service-list__text">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+							</p>
+						</div>
+					</div>
+					<div class="service-list__wrap">
+						<div class="service-item">
+							<div class="service-list__wrapper">
+								<h4 class="service-item__name">
+									deep tissue massage
+								</h4>
+								<div class="service-item__price">
+									From 280 AED
+								</div>
+							</div>
+							<div class="accordion services-item__accordion">
+								<button class="accordion__control service-item__control" aria-expanded="false">
+									<span class="accordion__title service-item__title">Show Less</span>
+									<span class="accordion__icon service-item__icon">
+										<img src="images/icon/chevron.svg" alt="">
+									</span>
+								</button>
+								<div class="accordion__content service-item__content" aria-hidden="true">
+									<div class="service-item__text">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
+											incididunt
+											ut labore et dolore magna.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="service-list__wrapper">
+								<h4 class="service-item__name">
+									relaxation massage
+								</h4>
+								<div class="service-item__price">
+									From 280 AED
+								</div>
+							</div>
+							<div class="accordion services-item__accordion">
+								<button class="accordion__control service-item__control" aria-expanded="false">
+									<span class="accordion__title service-item__title">Show Less</span>
+									<span class="accordion__icon service-item__icon">
+										<img src="images/icon/chevron.svg" alt="">
+									</span>
+								</button>
+								<div class="accordion__content service-item__content" aria-hidden="true">
+									<div class="service-item__text">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
+											incididunt
+											ut labore et dolore magna.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="service-list__wrapper">
+								<h4 class="service-item__name">
+									shiatsu massage
+								</h4>
+								<div class="service-item__price">
+									From 280 AED
+								</div>
+							</div>
+							<div class="accordion services-item__accordion">
+								<button class="accordion__control service-item__control" aria-expanded="false">
+									<span class="accordion__title service-item__title">Show Less</span>
+									<span class="accordion__icon service-item__icon">
+										<img src="images/icon/chevron.svg" alt="">
+									</span>
+								</button>
+								<div class="accordion__content service-item__content" aria-hidden="true">
+									<div class="service-item__text">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
+											incididunt
+											ut labore et dolore magna.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="service-list__wrapper">
+								<h4 class="service-item__name">
+									pre/post natal
+								</h4>
+								<div class="service-item__price">
+									From 280 AED
+								</div>
+							</div>
+							<div class="accordion services-item__accordion">
+								<button class="accordion__control service-item__control" aria-expanded="false">
+									<span class="accordion__title service-item__title">Show Less</span>
+									<span class="accordion__icon service-item__icon">
+										<img src="images/icon/chevron.svg" alt="">
+									</span>
+								</button>
+								<div class="accordion__content service-item__content" aria-hidden="true">
+									<div class="service-item__text">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
+											incididunt
+											ut labore et dolore magna.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="service-list__wrapper">
+								<h4 class="service-item__name">
+									lymphatic massage
+								</h4>
+								<div class="service-item__price">
+									From 280 AED
+								</div>
+							</div>
+							<div class="accordion services-item__accordion">
+								<button class="accordion__control service-item__control" aria-expanded="false">
+									<span class="accordion__title service-item__title">Show Less</span>
+									<span class="accordion__icon service-item__icon">
+										<img src="images/icon/chevron.svg" alt="">
+									</span>
+								</button>
+								<div class="accordion__content service-item__content" aria-hidden="true">
+									<div class="service-item__text">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
+											incididunt
+											ut labore et dolore magna.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="service-list__wrapper">
+								<h4 class="service-item__name">
+									maderotheraphy
+								</h4>
+								<div class="service-item__price">
+									From 280 AED
+								</div>
+							</div>
+							<div class="accordion services-item__accordion">
+								<button class="accordion__control service-item__control" aria-expanded="false">
+									<span class="accordion__title service-item__title">Show Less</span>
+									<span class="accordion__icon service-item__icon">
+										<img src="images/icon/chevron.svg" alt="">
+									</span>
+								</button>
+								<div class="accordion__content service-item__content" aria-hidden="true">
+									<div class="service-item__text">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
+											incididunt
+											ut labore et dolore magna.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="service-list__wrapper">
+								<h4 class="service-item__name">
+									signature massage
+								</h4>
+								<div class="service-item__price">
+									From 280 AED
+								</div>
+							</div>
+							<div class="accordion services-item__accordion">
+								<button class="accordion__control service-item__control" aria-expanded="false">
+									<span class="accordion__title service-item__title">Show Less</span>
+									<span class="accordion__icon service-item__icon">
+										<img src="images/icon/chevron.svg" alt="">
+									</span>
+								</button>
+								<div class="accordion__content service-item__content" aria-hidden="true">
+									<div class="service-item__text">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
+											incididunt
+											ut labore et dolore magna.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="service-list__wrapper">
+								<h4 class="service-item__name">
+									reflexology
+								</h4>
+								<div class="service-item__price">
+									From 280 AED
+								</div>
+							</div>
+							<div class="accordion services-item__accordion">
+								<button class="accordion__control service-item__control" aria-expanded="false">
+									<span class="accordion__title service-item__title">Show Less</span>
+									<span class="accordion__icon service-item__icon">
+										<img src="images/icon/chevron.svg" alt="">
+									</span>
+								</button>
+								<div class="accordion__content service-item__content" aria-hidden="true">
+									<div class="service-item__text">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
+											incididunt
+											ut labore et dolore magna.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="service-list__wrapper">
+								<h4 class="service-item__name">
+									couples massage
+								</h4>
+								<div class="service-item__price">
+									From 280 AED
+								</div>
+							</div>
+							<div class="accordion services-item__accordion">
+								<button class="accordion__control service-item__control" aria-expanded="false">
+									<span class="accordion__title service-item__title">Show Less</span>
+									<span class="accordion__icon service-item__icon">
+										<img src="images/icon/chevron.svg" alt="">
+									</span>
+								</button>
+								<div class="accordion__content service-item__content" aria-hidden="true">
+									<div class="service-item__text">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
+											incididunt
+											ut labore et dolore magna.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="service-list__wrapper">
+								<h4 class="service-item__name">
+									face camp (blue/red light therapy)
+								</h4>
+								<div class="service-item__price">
+									From 280 AED
+								</div>
+							</div>
+							<div class="accordion services-item__accordion">
+								<button class="accordion__control service-item__control" aria-expanded="false">
+									<span class="accordion__title service-item__title">Show Less</span>
+									<span class="accordion__icon service-item__icon">
+										<img src="images/icon/chevron.svg" alt="">
+									</span>
+								</button>
+								<div class="accordion__content service-item__content" aria-hidden="true">
+									<div class="service-item__text">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
+											incididunt
+											ut labore et dolore magna.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="service-list__wrapper">
+								<h4 class="service-item__name">
+									face camp (microcurrent)
+								</h4>
+								<div class="service-item__price">
+									From 280 AED
+								</div>
+							</div>
+							<div class="accordion services-item__accordion">
+								<button class="accordion__control service-item__control" aria-expanded="false">
+									<span class="accordion__title service-item__title">Show Less</span>
+									<span class="accordion__icon service-item__icon">
+										<img src="images/icon/chevron.svg" alt="">
+									</span>
+								</button>
+								<div class="accordion__content service-item__content" aria-hidden="true">
+									<div class="service-item__text">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
+											incididunt
+											ut labore et dolore magna.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="service-list__wrapper">
+								<h4 class="service-item__name">
+									infrared sauna blanket therapy
+								</h4>
+								<div class="service-item__price">
+									From 280 AED
+								</div>
+							</div>
+							<div class="accordion services-item__accordion">
+								<button class="accordion__control service-item__control" aria-expanded="false">
+									<span class="accordion__title service-item__title">Show Less</span>
+									<span class="accordion__icon service-item__icon">
+										<img src="images/icon/chevron.svg" alt="">
+									</span>
+								</button>
+								<div class="accordion__content service-item__content" aria-hidden="true">
+									<div class="service-item__text">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
+											incididunt
+											ut labore et dolore magna.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="testimonials">
+				<div class="container">
+					<h2 class="section-title testimonials__title">
+						Testimonials
+					</h2>
+					<div class="testimonials__grid">
+						<div class="testimonials-item">
+							<ul class="testimonials-item__rating list-reset">
+								<li>
+									<img src="images/icon/star.svg" alt="" width="33" height="33">
+								</li>
+								<li>
+									<img src="images/icon/star.svg" alt="" width="33" height="33">
+								</li>
+								<li>
+									<img src="images/icon/star.svg" alt="" width="33" height="33">
+								</li>
+								<li>
+									<img src="images/icon/star.svg" alt="" width="33" height="33">
+								</li>
+								<li>
+									<img src="images/icon/star.svg" alt="" width="33" height="33">
+								</li>
+							</ul>
+							<div class="testimonials-item__wrap">
+								<h4 class="testimonials-item__title">
+									Amazing Massage
+								</h4>
+								<div class="testimonials-item__text">
+									<p>
+										“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+										ut labore et dolore magna aliqua.”
+									</p>
+								</div>
+								<div class="testimonials-item__name">
+									Sara H.
+								</div>
+							</div>
+						</div>
+						<div class="testimonials-item">
+							<ul class="testimonials-item__rating list-reset">
+								<li>
+									<img src="images/icon/star.svg" alt="" width="33" height="33">
+								</li>
+								<li>
+									<img src="images/icon/star.svg" alt="" width="33" height="33">
+								</li>
+								<li>
+									<img src="images/icon/star.svg" alt="" width="33" height="33">
+								</li>
+								<li>
+									<img src="images/icon/star.svg" alt="" width="33" height="33">
+								</li>
+								<li>
+									<img src="images/icon/star.svg" alt="" width="33" height="33">
+								</li>
+							</ul>
+							<div class="testimonials-item__wrap">
+								<h4 class="testimonials-item__title">
+									Amazing Massage
+								</h4>
+								<div class="testimonials-item__text">
+									<p>
+										“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+										ut labore et dolore magna aliqua.”
+									</p>
+								</div>
+								<div class="testimonials-item__name">
+									Sara H.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="booked section-left">
+				<div class="container">
+					<div class="booked__wrapper">
+						<div class="section-left__wrapper">
+							<div class="booked__img section-left__img">
+								<picture>
+									<source srcset="images/home/booked/booked.webp 1x, images/home/booked/booked@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/booked/booked.png 1x, images/home/booked/booked@2x.png 1.3x" type="image/png">
+									<img src="images/home/booked/booked.png" alt="" width="437" height="504">
+								</picture>
+							</div>
+							<div class="booked__wrap section-left__wrap">
+								<h2 class="section-title booked__title">
+									Get booked in
+								</h2>
+								<div class="section-text booked__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+										labore et dolore magna al.
+									</p>
+								</div>
+								<a href="#" class="b-btn b-btn--green">View Our Story</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__grid">
+					<a href="index.html" class="footer__logo">
+						<img src="images/icon/logo-footer.svg" alt="Cyan" width="202" height="179">
+					</a>
+					<ul class="footer__nav list-reset">
+						<li>
+							<a href="#">
+								Our Services
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Atmosphere
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Blogs
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Contact us
+							</a>
+						</li>
+					</ul>
+					<div class="footer__wrap">
+						<div class="footer__links">
+							<a href="mailto:info@cyanuae.com">info@cyanuae.com</a>
+							<a href="tel:+971547790503">+971547790503</a>
+						</div>
+						<div class="footer__s">
+							<div class="s-block">
+								<a href="#" class="s-block__link" target="_blank" rel="noopener nofollow">
+									<img src="images/icon/inst.svg" alt="" width="39" height="39">
+								</a>
+								<a href="#" class="s-block__link" target="_blank" rel="noopener nofollow">
+									<img src="images/icon/facebook.svg" alt="" width="39" height="39">
+								</a>
+								<a href="#" class="s-block__link" target="_blank" rel="noopener nofollow">
+									<img src="images/icon/mail.svg" alt="" width="39" height="39">
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					<a href="#">
+						<span>©</span> Cyan Wellness 2023
+					</a>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
