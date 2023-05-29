@@ -30,9 +30,9 @@ if (typeof window !== 'undefined') {
 var isIosDevice = typeof window !== 'undefined' && window.navigator && window.navigator.platform && (/iP(ad|hone|od)/.test(window.navigator.platform) || window.navigator.platform === 'MacIntel' && window.navigator.maxTouchPoints > 1);
 
 
-var locks = [];
+var locks = (/* unused pure expression or super */ null && ([]));
 var documentListenerAdded = false;
-var initialClientY = -1;
+var initialClientY = (/* unused pure expression or super */ null && (-1));
 var previousBodyOverflowSetting = void 0;
 var previousBodyPosition = void 0;
 var previousBodyPaddingRight = void 0;
@@ -294,6 +294,15 @@ const burger = () => {
   const menu = document?.querySelector('[data-menu]');
   const targetElement = document.querySelector('body');
   const header = document.querySelector('.header');
+  function disableScroll() {
+    const pagePosition = window.scrollY;
+    document.body.classList.add('scroll');
+    document.body.dataset.position = pagePosition;
+  }
+  function enableScroll() {
+    document.body.classList.remove('scroll');
+    document.body.removeAttribute('data-position');
+  }
   burgerEl?.addEventListener('click', () => {
     burgerEl?.classList.toggle('burger--active');
     menu?.classList.toggle('active');
@@ -301,11 +310,11 @@ const burger = () => {
     if (menu?.classList.contains('active')) {
       burgerEl?.setAttribute('aria-expanded', 'true');
       burgerEl?.setAttribute('aria-label', 'Сlose menu');
-      disableBodyScroll(targetElement);
+      disableScroll();
     } else {
       burgerEl?.setAttribute('aria-expanded', 'false');
       burgerEl?.setAttribute('aria-label', 'Open menu');
-      enableBodyScroll(targetElement);
+      enableScroll();
     }
   });
   const appHeight = () => {
